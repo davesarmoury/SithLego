@@ -1,0 +1,10 @@
+global col = col +1
+
+if col >= 48:
+  global col = 0
+  global row = row + 1
+end
+
+if row >= 48:
+   global image_complete = True
+end

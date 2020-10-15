@@ -1,0 +1,8 @@
+Plate = CornerTL
+col_vec = [CornerTR[0]-CornerTL[0],CornerTR[1]-CornerTL[1],CornerTR[2]-CornerTL[2]]/47
+row_vec = [CornerBL[0]-CornerTL[0],CornerBL[1]-CornerTL[1],CornerBL[2]-CornerTL[2]]/47
+Plate[0] = Plate[0] + col*col_vec[0] + row*row_vec[0]
+Plate[1] = Plate[1] + col*col_vec[1] + row*row_vec[1]
+Plate[2] = Plate[2] + col*col_vec[2] + row*row_vec[2]
+
+global pipindex = pixels[row * 48 + col] - 1
